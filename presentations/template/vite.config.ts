@@ -4,7 +4,4 @@ import { preloadPresentationAssets } from "@danielbiegler/react-slides/vite-plug
 
 export default defineConfig({
   plugins: [react(), preloadPresentationAssets()],
-  resolve: {
-    dedupe: ["react", "react-dom", "react-router"],
-  },
 })
