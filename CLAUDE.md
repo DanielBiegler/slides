@@ -8,13 +8,15 @@ Use **Bun** exclusively. Do not use npm, yarn, or pnpm.
 
 ## Monorepo structure
 
-This is a Bun workspace monorepo. Presentations live under `presentations/`. Each presentation is an independent Vite app that inherits the root `tsconfig.json`.
+This is a Bun workspace monorepo. Presentations live under `presentations/`. Each presentation is an independent Vite app that inherits the root `tsconfig.json`. Presentations may be written in German or English.
 
 ## Creating a new presentation
 
 ```sh
 ./scaffold.sh <name>
 ```
+
+Use **kebab-case** for `<name>` (e.g. `my-talk`, `q3-roadmap`). The name is used verbatim as the directory name, `package.json` name, deck title, and page title — spaces will break the script.
 
 This copies the template, renames identifiers, and runs `bun install`.
 
